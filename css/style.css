@@ -10,8 +10,8 @@ hr {
     width: 10%;
 }
 
-h1 {
-    color: #66bfbf;
+h1, h2 {
+    color: #535558;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
