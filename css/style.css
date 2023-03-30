@@ -10,11 +10,19 @@ hr {
     width: 10%;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #535558;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 p, li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a {
+    font-size: 1.2em;
+}
+
+.plainlink {
+    font-size: 1em;
 }
