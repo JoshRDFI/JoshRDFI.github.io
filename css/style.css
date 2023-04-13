@@ -36,6 +36,13 @@ a {
     font-size: 1em;
 }
 
+.toclink {
+    font-size: 1em;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
 .centerpage {
     margin: 0px auto;
     width: 80%;
