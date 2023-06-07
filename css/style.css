@@ -72,3 +72,16 @@ a {
     min-width: 150px;
     display: table-cell;
 }
+
+.columns {
+    columns: 2;
+    margin: auto;
+    width: 80%;
+    
+}
+
+.block {
+    width: 90%;
+    margin: auto;
+    font-size: .8em;
+}

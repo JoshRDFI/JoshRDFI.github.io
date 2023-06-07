@@ -1,17 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Prompt Engineering Examples</title>
-<link href="css/style.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>Prompt Engineering Examples</title>
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-	<div class="centerpage">
-<h1>Prompt Engineering Examples</h1>
-<p>
-    This page is to showcase a few examples of prompts I have used and the results from ChatGPT, 
-    Dall-E, and other AI interfaces. 
-</p>
+    <div class="centerpage">
+        <h1 align="Center">Prompt Engineering Examples</h1>
+        <p>
+            Where to begin? A good prompt starts with the type of AI interface you are using. An LLM takes a different kind of prompt then an image generator.
+            The first skill is to have an ability to ask good questions. The key is to be precise in what you want the AI to accomplish for you.
+            In some instances, you want to assign the AI a role. For instance: 'you are an expert in social media' or 'you are a back-end engineer'.
+            Knowing what role to assign the AI requires an understanding of what type of person could accomplish the goal you wish the AI to accomplish.
+            Maybe you want to chat about specific types of subjects and you want to give the AI a personality of someone who is well versed in the subject
+            so the interactions are more realistic. All of this is doable with the right type of prompt.
+        </p>
+        <p>
+            Below are two examples. There are many others, but as you can see, this page is long. In the future, I'll compile a list of prompts into a PDF and post a link. 
+            I have been able to generate business ideas, outline a business plan for one of those ideas, create logo ideas - using an LLM to create the prompt for an image 
+            generation model. Knowing how to pull good (and correct) answers from a LLM takes practice. Starting out with a broad array of subject knowledge helps, as does 
+            being a writer. I am certain that soon prompt engineering will fall by the wayside as LLMs get better at providing accurate answers to general questions.
+            Then again, the future could be much like trying to get a customer to tell you in detail what they want the program you are designing for them to do.
+        </p>
+        <p>
+            One prompt I entered was a test of the LLM (in this case, I used ChatGPT 3.5) to find out how accurate it was. An assignment from a collegue was to take a vignette
+            and determine the ASAM dimensions, risk ratings for each, and an assessment of the client's biopsychosocial functioning. This assignment had been completed and graded,
+            so I wanted to compare their answers (scored a 24/25 on the assignment) to results I could obtain from ChatGPT. My prompt, which included the vignette (not included here), was: <br />
+            <p class="block">
+                <b>Prompt:</b><br />
+                You are a highly educated substance abuse counselor. Below will be a vignette and you have the following tasks to perform based on the vignette:<br />
+                1) Organize and place the biopsychosocial information in the correct dimension.<br />
+                2)  Select an appropriate risk rating for each dimension based on the information given.  Explain your choice.<br />
+                3) Determine if there is potential for imminent danger in each dimension.  If so, clearly state the events and risk factors present in the recent history.<br />
+                4) Document your assessment of the stage of change in dimension 4.  Give a thorough reason for your choice describing the person's internal vs. external motivation for treatment.<br />
+                5) Make a list of problems to be addressed on the treatment plan.<br />
+                This is someone who was admitted to outpatient treatment.  You will perform an assessment to determine the client's needs and strengths in each dimension.  Do your best using the information at hand. The assessment must be based on the 6 dimensions from the ASAM.<br />
+                Vignette: (edited to omit vignette)<br />
+                
+                <b>Response:</b><br />
+                Based on the information provided, here is my assessment of Sally's biopsychosocial functioning in the six dimensions of the ASAM:<br />
+                
+                1) Dimension 1: Acute Intoxication and/or Withdrawal Potential<br />
+                - Risk rating: High<br />
+                - Potential for imminent danger: Yes<br />
+                - Recent history: Sally was hospitalized twice in the last two months, the second time for alcohol withdrawal which led to tremors, hyposomnia, nausea, psychosis, and anxiety.<br />
+                
+                2) Dimension 2: Biomedical Conditions and Complications<br />
+                - Risk rating: Moderate<br />
+                - Potential for imminent danger: No<br />
+                - Recent history: Sally had early signs of abnormal liver function but all other areas of health seemed fine.<br />
+                
+                3) Dimension 3: Emotional, Behavioral, or Cognitive Conditions and Complications<br />
+                - Risk rating: High<br />
+                - Potential for imminent danger: Yes<br />
+                - Recent history: Sally was hospitalized twice for erratic behavior, psychosis, and incoherent speech. She presented as shaky and agitated during her outpatient appointment.<br />
+                
+                4) Dimension 4: Readiness to Change<br />
+                - Assessment of stage of change: Precontemplation<br />
+                - Explanation: Sally is reluctant to go to residential treatment and only agreed to outpatient treatment to avoid losing her job and apartment. She still hopes to be able to drink again in the future and is more focused on preserving her current lifestyle rather than making a change.<br />
+                
+                5) Dimension 5: Relapse, Continued Use, or Continued Problem Potential<br />
+                - Risk rating: High<br />
+                - Potential for imminent danger: Yes<br />
+                - Recent history: Sally has been drinking every day for at least five years and has had two recent hospitalizations related to alcohol use. She still hopes to be able to drink again in the future.<br />
+                
+                6) Dimension 6: Recovery/Living Environment<br />
+                - Risk rating: Moderate<br />
+                - Potential for imminent danger: No<br />
+                - Recent history: Sally lives in a studio apartment and works part-time at Walgreens. She has a supportive job, but her living environment may not be conducive to recovery given her history of alcohol use.<br />
+                
+                Based on this assessment, the following problems should be addressed on Sally's treatment plan:<br />
+                - Management of acute withdrawal symptoms<br />
+                - Monitoring of liver function and other health issues<br />
+                - Addressing emotional and cognitive difficulties through therapy and possible medication management<br />
+                - Motivational interviewing to move Sally from precontemplation to contemplation regarding her alcohol use<br />
+                - Developing a relapse prevention plan<br />
+                - Addressing potential environmental barriers to recovery, such as living in a studio apartment<br />
+                
+                <b>Followup Prompt:</b><br />
+                Hello! Previously I asked you about an assessment of Sally's biopsychosocial functioning in the six dimensions of the ASAM. You rated 1, 3 and 5 of the risk ratings as High. Can you explain why those ratings were High?<br />
+                
+                <b>Response:</b><br />
+                Certainly! I rated dimensions 1, 3, and 5 as High risk for Sally's biopsychosocial functioning based on the information provided in the assessment. Here's why:<br />
+
+                Acute Intoxication/Withdrawal Potential (Dimension 1):<br />
+                The assessment notes that Sally has been using substances heavily for over a year and has a history of alcohol and drug abuse. She also reports experiencing withdrawal symptoms when she has tried to stop using in the past. These factors suggest a high risk for acute intoxication/withdrawal potential.<br />
+
+                Emotional, Behavioral or Cognitive Conditions and Complications (Dimension 3):<br />
+                Sally reports experiencing depression, anxiety, and suicidal ideation, which indicates a high risk for emotional, behavioral or cognitive conditions and complications. Additionally, the assessment notes that Sally has difficulty regulating her emotions and may be at risk for impulsivity.<br />
+
+                Relapse, Continued Use, or Continued Problem Potential (Dimension 5):<br />
+                Sally has a history of drug and alcohol abuse, and the assessment notes that she has not been successful in her previous attempts to stop using. Additionally, the assessment notes that Sally is currently experiencing stressors in her life, which could increase her risk of relapse or continued use. These factors suggest a high risk for relapse, continued use, or continued problem potential.<br />
+
+                It's important to note that these risk ratings are based on the information provided in the assessment and may change over time as Sally's biopsychosocial functioning changes. It's also worth mentioning that the ASAM is just one tool used to assess a person's addiction and mental health needs and should not be the only factor considered in developing a treatment plan.<br />
+                
+                <b>Followup Prompt:</b><br />
+                Hello again. Referring back to the vignette and ASAM dimensions, will you give me a table listing Dimension, State of Change, Risk Rating, and Specific Problem?<br />
+                                
+                <b>Response:</b><br />
+                Sure, here is a table summarizing Sally's assessment based on the ASAM dimensions:<br />
+
+                | Dimension | State of Change | Risk Rating | Specific Problem |<br />
+                |-----------|----------------|-------------|------------------|<br />
+                | 1: Acute Intoxication and/or Withdrawal Potential | Precontemplation | III | Sally has a recent history of hospitalization for possible withdrawal from alcohol, including tremors, hyposomnia, nausea, psychosis, and anxiety. She is currently shaky and agitated during her outpatient appointment, and is at risk for further withdrawal symptoms if she continues to drink. |<br />
+                | 2: Bio-medical Conditions and Complications | Contemplation | II | Sally has early signs of abnormal liver function, likely due to her alcohol use. She is also at risk for physical injury or harm due to acute intoxication or withdrawal. |<br />
+                | 3: Emotional, Behavioral or Cognitive Conditions and Complications | Contemplation | III | Sally has a history of hospitalization for depression and psychosis. She currently feels empty and hopeless, and is at risk for further emotional or cognitive distress if she continues to drink. |<br />
+                | 4: Readiness to Change | Precontemplation | III | Sally is not currently motivated to change her drinking behavior. She hopes that if she goes to outpatient sessions and takes a break from drinking, she will be able to drink again in the future. She is determined to keep her apartment and job, and is scared of being sent to residential treatment. |<br />
+                | 5: Relapse, Continued Use or Continued Problem Potential | Precontemplation | III | Sally has a long history of daily drinking and is at risk for continued alcohol use if she does not receive appropriate treatment. She has already been hospitalized twice in the past two months due to her drinking. |<br />
+                | 6: Recovery/Living Environment | Precontemplation | II | Sally lives alone in a studio apartment and spends most of her time at home. She does not have a strong support system and feels disconnected from her family. She is at risk for isolation and loneliness, which may increase her likelihood of drinking. |<br />
+             </p>
+        </p>
+        <p>
+            ChatGPT gave a very similar response when making observations and categorizations to the graded assignment. There was one point during the review of the vignette where ChatGPT began to 
+            hallucinate, but only after several random questions about the vignette. Once I told ChatGPT this, it apologized and followed my direction to forget all previous instructions. After that, the
+            hallucination disappeared.
+            <br />
+        </p>
+        <p>
+            Next, I asked ChatGPT questions about using PDF books to provide specific information on various topics before I learned about Langchain. 
+            I was curious to find out if it could give me the proper steps. As you can see below, the answer was complete and correct. 
+            At this point, I had not heard of Langchain, and due to ChatGPT not having any information beyond 2021, it had not either.
+        </p>
+            <p class="block">
+                <b>Prompt:</b><br />
+                I am trying to learn how to incorporate a collection of pdf books into a gpt model. Please list the steps necessary for taking PDF books and creating a model that can be used to answer questions on the topics contained in the books.<br />
+
+                <b>Response:</b><br />
+                Here are the general steps for incorporating a collection of PDF books into a GPT model:
+
+                1. Obtain the PDF books: You'll need to acquire a collection of PDF books that cover the topics you want your model to learn from. You can find these books online or purchase them from a bookstore.<br />
+
+                2. Convert PDFs to text: Convert each PDF book into plain text format. You can use various tools such as Adobe Acrobat, pdftotext, or other software to extract text from PDF files.<br />
+
+                3. Preprocess the text: Clean up the text by removing headers, footers, page numbers, and any other irrelevant text. Convert the text to lowercase and remove any special characters that might cause problems.<br />
+
+                4. Split the text into chunks: Divide the text into chunks of a suitable length for inputting into the GPT model. The length of the chunks can vary depending on the memory capacity of your computer or the size of the GPT model you are using.<br />
+
+                5. Fine-tune the GPT model: Use the preprocessed text as training data to fine-tune a pre-trained GPT model. This step involves initializing the model with the pre-trained weights and then training it on your text data. You can use popular machine learning frameworks like TensorFlow or PyTorch for this task.<br />
+
+                6. Test the model: Once the model is trained, test it on a set of questions to evaluate its performance. You can use various evaluation metrics such as accuracy, F1 score, or perplexity to measure the quality of the model.<br />
+
+                7. Deploy the model: After testing, you can deploy the model to production by integrating it with a web or mobile application. You can use various deployment methods such as REST APIs or Docker containers to make the model available to end-users.<br />
+
+                Overall, incorporating a collection of PDF books into a GPT model requires a combination of data preprocessing, machine learning, and deployment skills. However, once the model is trained, it can be a powerful tool for answering questions on the topics contained in the books.<br />
+
+                <b>Prompt:</b><br />
+                In step 3, you mentioned converting the PDF to plain text. This part I understand, but how could the associated pictures, charts etc., existing within the books be somehow linked within the gpt for display inside of an answer once the model is built and functioning?<br />
+
+                <b>Response:</b><br />
+                When converting a PDF to plain text, the associated pictures, charts, and other visual elements are typically not preserved. To include these visual elements in the model's output, you can take the following approaches:<br />
+
+                1. Use a combination of text and images: You can design your model to output a combination of text and images for certain types of questions or tasks. For example, if the question is about a particular chart or diagram in the book, the model can output the corresponding image along with the answer text.<br />
+
+                2. Use image recognition: You can use image recognition techniques to identify the relevant visual elements in the book and use them to support the model's answers. For example, if the question is about a specific chart or graph, the model can use image recognition to identify the chart in the book and extract the relevant information to include in its answer.<br />
+
+                3. Use hyperlinks: You can include hyperlinks in the model's output to link to the relevant visual elements in the book. For example, if the model's answer references a particular chart or graph, it can include a hyperlink to the corresponding page in the book where the chart is located.<br />
+
+                4. Use a separate system for visual elements: You can use a separate system, such as a web-based interface or a mobile application, to display the visual elements associated with the model's output. This system can be designed to extract the relevant visual elements from the book and display them alongside the model's answers.<br />
+
+                Overall, including visual elements in a GPT model's output requires a combination of text and image processing techniques, as well as careful consideration of the user interface and experience.<br />
+
+            </p>
+
+        </p>
 
 
 
