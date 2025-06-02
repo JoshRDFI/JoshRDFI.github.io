@@ -1,87 +1,204 @@
-html, body {
-    height: 100%;
+/* Base styles */
+body { 
+  font-family: 'Roboto', sans-serif; 
+  line-height: 1.6; 
+  margin: 0; 
+  padding: 0; 
+  background: #f9f9f9; 
+  color: #333;
 }
 
-html {
-    display: table;
-    margin: auto;
+/* Header styles */
+header { 
+  background: #222; 
+  color: #fff; 
+  padding: 2rem 1rem; 
+  text-align: center; 
 }
 
-body {
-    background-color: aliceblue;
+header h1 {
+  margin: 0.5rem 0;
+  color: #fff;
 }
 
-hr {
-    border-style: none;
-    border-top-style: dotted;
-    border-color: lightgray;
-    border-width: 8px;
-    width: 10%;
+header p {
+  margin: 0;
+  font-size: 1.2rem;
+  opacity: 0.8;
 }
 
-h1, h2, h3 {
-    color: #535558;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+/* Navigation */
+nav ul { 
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  gap: 2rem; 
+  margin-bottom: 1.5rem;
 }
 
-p, li {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+nav a { 
+  color: #fff; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s;
 }
 
-a {
-    font-size: 1.2em;
+nav a:hover {
+  color: #4CAF50;
 }
 
-.plainlink {
-    font-size: 1em;
-}
-
-.toclink {
-    font-size: 1em;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-}
-
+/* Main content */
 .centerpage {
-    margin: 0px auto;
-    width: 80%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-.mainbox {
-    border: 0px;
-    text-align: left;
-    margin-top: 30px;
-    display: table;
-    table-layout: fixed;
-    border-spacing: 3px;
-    border-collapse: separate;
+h2 {
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
 }
 
-.leftbox {
-    width: 56px;
-    border-right: 3px;
-    vertical-align: middle;
-    display: table-cell;
-    margin-left: auto;
-    margin-right: auto;
+/* Project cards */
+.project-card { 
+  background: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+  margin: 1.5rem 0; 
+  padding: 1.5rem; 
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.rightbox {
-    font-size: 16px;
-    min-width: 150px;
-    display: table-cell;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.columns {
-    columns: 2;
-    margin: auto;
-    width: 80%;
-    
+.project-card h3 {
+  margin-top: 0;
+  color: #333;
 }
 
-.block {
-    width: 90%;
-    margin: auto;
-    font-size: .8em;
+.project-card a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Skills section */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.skill-category {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  color: #4CAF50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.skill-category ul {
+  padding-left: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* Certification section */
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.cert-card {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.cert-card img {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.cert-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.cert-card p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Profile photo */
+.profile-photo { 
+  width: 120px; 
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; 
+  margin: 1rem auto; 
+  display: block; 
+  border: 3px solid #fff;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .skills-container,
+  .cert-container {
+    flex-direction: column;
+  }
+  
+  .cert-card {
+    max-width: 100%;
+  }
 }
