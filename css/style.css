@@ -159,12 +159,12 @@ h2 {
 /* Header Logo */
 .header-logo {
   max-width: 860px;
-  width: 100%;
+  width: 70%;
   height: auto;
   object-fit: contain;
   margin: 1rem auto;
   display: block;
-  border: 3px solid #fff;
+  border: 0px solid #fff;
 }
 
 /* Profile photo */
