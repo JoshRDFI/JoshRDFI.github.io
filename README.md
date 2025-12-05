@@ -2,7 +2,7 @@
 
 Welcome to the GitHub repository for my personal portfolio website. This site showcases my journey, skills, and projects in the fields of Generative AI, Data Science, and Machine Learning.
 
-**[View My Live Portfolio Here](https://joshdrfi.github.io/)**
+**[View My Live Portfolio Here](https://joshrdfi.github.io/)**
 
 ## About This Portfolio
 
