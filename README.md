@@ -8,8 +8,9 @@ Welcome to the GitHub repository for my personal portfolio website. This site sh
 
 This portfolio is a curated collection of my work, designed to provide a comprehensive overview of my capabilities. It includes:
 
-*   **Professional Summary:** A brief introduction to my background and expertise as an AI-Native GenAI Architect.
-*   **Skills & Technologies:** A detailed breakdown of my conceptual skills (like RAG implementation and model tuning) and the specific technologies I work with (including Python, LangChain, PyTorch, AWS, and more).
+*   **Professional Summary:** My background as an AI-Native GenAI Architect specializing in governed, sovereign AI for regulated and high-stakes environments.
+*   **Skills & Technologies:** A detailed breakdown of my conceptual skills (RAG, agentic AI, evaluation & observability, AI governance, and knowledge-graph memory) and the specific technologies I work with (including Python, FastAPI, LangChain/LangGraph, PyTorch, Neo4j, vector databases, the NVIDIA AI stack, and AWS/Azure/GCP, and more).
+*   **Featured Work:** QOR — a governed multi-agent AI platform for regulated industries, built by RDF Industries.
 *   **Projects:** A showcase of my hands-on projects in AI, machine learning, and data science, with links to their respective repositories.
 *   **Academic Work:** Highlights from my academic career, including my capstone project and work from my Udacity Nanodegree.
 *   **Certifications:** A list of my professional certifications from CompTIA, Axelos, and CIW.
