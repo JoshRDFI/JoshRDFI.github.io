@@ -2,387 +2,81 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Joshua Rogers Portfolio</title>
-<link href="css/style.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joshua Rogers · Principal AI Systems Architect &amp; Engineer · RDF Industries</title>
+<meta name="description" content="Joshua Rogers, founder of RDF Industries and Principal AI Systems Architect &amp; Engineer. 20+ years taking AI and enterprise systems from idea or prototype to production, and the builder of QOR, a governed multi-agent platform.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joshrdfi.github.io/">
+<meta property="og:site_name" content="Joshua Rogers · RDF Industries">
+<meta property="og:title" content="Joshua Rogers · Principal AI Systems Architect &amp; Engineer">
+<meta property="og:description" content="Founder of RDF Industries. I take AI from idea or prototype to production: architecture, budget and executive alignment, and the hands-on engineering to deliver it.">
+<meta property="og:image" content="https://joshrdfi.github.io/img/RDFI_Logo_light.png">
+<meta property="og:image:alt" content="RDF Industries logo">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1520" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="img/RDFI_Logo_light.png">
+<link rel="apple-touch-icon" href="img/RDFI_Logo_light.png">
+<script>
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+    } catch (e) {}
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&amp;family=IBM+Plex+Mono:wght@500&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/theme.js" defer></script>
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#technologies">Technologies</a></li>
-				<li><a href="#featured">Featured</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#academic-projects">Academic</a></li>
-				<li><a href="#certifications">Certifications</a></li>
-				<li><a href="https://github.com/JoshRDFI" target="_blank">GitHub</a></li>
-			</ul>
-		</nav>
-		<a href="https://www.rdfindustries.com" target="_blank"><img src="img/RDFI_Logo_light.png" alt="RDF Industries — Bringing Technology to Life" class="header-logo"></a>
-		<h1>Joshua Rogers</h1>
-		<p>AI-Native GenAI Architect & ML Engineer</p>
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<header class="site-header">
+		<div class="container">
+			<a class="brand" href="https://www.rdfindustries.com" target="_blank" rel="noopener">
+				<img src="img/RDFI_Logo_light.png" alt="RDF Industries" width="153" height="40">
+			</a>
+			<nav class="site-nav" aria-label="Primary">
+				<ul>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#qor">QOR</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#background">Background</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<button id="theme-toggle" type="button" aria-label="Switch colour theme" aria-pressed="false"><span aria-hidden="true">◐</span> <span class="theme-toggle-label">dark</span></button>
+			</nav>
+		</div>
 	</header>
-	<div class="centerpage">
-		<h2>Welcome to My Portfolio</h2>
-		<p>
-			AI-native GenAI architect and ML engineer with 20+ years across software, infrastructure, and data systems. I design and build enterprise LLM, RAG, and agentic AI &mdash; with strong evaluation, observability, and governance &mdash; and specialize in governed, sovereign AI that runs securely on-prem, air-gapped, or in the cloud (Azure, AWS, GCP). Recent work includes QOR, a governed multi-agent platform for regulated industries.</p>
-		<p>
-			This page showcases my projects in AI, machine learning, and data science. I've completed work through Western Governors University (BS in Data Management/Data Analytics), Udacity (Data Analyst Nanodegree), and various personal projects. Feel free to explore my projects and certifications below.
-		</p>
 
-		<h2 id="skills">Skills</h2>
-		<div class="skills-container">
-			<div class="skill-category">
-				<h3>AI & Machine Learning</h3>
-				<ul>
-					<li>Prompt Engineering</li>
-					<li>Fine-tuning & LoRA</li>
-					<li>RAG Implementation</li>
-					<li>Agentic AI & Orchestration</li>
-					<li>Multi-agent Systems</li>
-					<li>Model Context Protocol (MCP)</li>
-					<li>Structured Outputs</li>
-					<li>Computer Vision</li>
-					<li>Natural Language Processing</li>
-					<li>Neural Networks</li>
-					<li>Local LLMs (Ollama / vLLM)</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Security & Governance</h3>
-				<ul>
-					<li>Governed Agent Architecture (authority-gated actions)</li>
-					<li>RBAC / ABAC</li>
-					<li>Audit Trails & Append-Only Logs</li>
-					<li>OAuth / OIDC</li>
-					<li>Secure On-Prem & Air-Gapped Deployment</li>
-					<li>Compliance-Aware Design (NIST 800-171, CMMC L2, ITAR/DFARS, SOC 2)</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Evaluation & Observability</h3>
-				<ul>
-					<li>Prompt Regression Testing</li>
-					<li>Hallucination Reduction</li>
-					<li>Structured-Output Validation</li>
-					<li>Human-in-the-Loop Review</li>
-					<li>Adversarial / Multi-Judge Review</li>
-					<li>AI Observability & Monitoring</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Knowledge Graph & Semantic</h3>
-				<ul>
-					<li>Neo4j Knowledge Graphs</li>
-					<li>Semantic / Graph-Backed Memory</li>
-					<li>Entity Resolution & Deduplication</li>
-					<li>Provenance & Source Grounding</li>
-					<li>JSON-LD</li>
-					<li>Embeddings & Vector Search</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Data Engineering</h3>
-				<ul>
-					<li>ETL Processes</li>
-					<li>Data Modeling</li>
-					<li>Data Processing & Wrangling</li>
-					<li>Data Formats (Parquet, JSON)</li>
-					<li>Database Design</li>
-					<li>Data Warehousing</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Business Intelligence & Visualization</h3>
-				<ul>
-					<li>Data Analysis & Visualization</li>
-					<li>Data Storytelling</li>
-					<li>Dashboard Creation</li>
-					<li>Insights for Non-technical Audiences</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Software Development</h3>
-				<ul>
-					<li>Application Development</li>
-					<li>Algorithm Design</li>
-					<li>Code Optimization</li>
-					<li>Testing & Debugging</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Project Management & Communication</h3>
-				<ul>
-					<li>Project Management</li>
-					<li>Stakeholder Engagement</li>
-					<li>Technical Presentations</li>
-					<li>Cross-functional Collaboration</li>
-					<li>System Integration</li>
-				</ul>
-			</div>
-		</div>
+	<main id="main" tabindex="-1">
+		<section id="work" class="section"></section>
+		<section id="qor" class="section"></section>
+		<section id="projects" class="section"></section>
+		<section id="background" class="section"></section>
+	</main>
 
-		<h2 id="technologies">Technologies</h2>
-		<div class="skills-container">
-			<div class="skill-category">
-				<h3>Programming Languages</h3>
-				<ul>
-					<li>Python</li>
-					<li>TypeScript</li>
-					<li>JavaScript</li>
-					<li>C++</li>
-					<li>C#</li>
-					<li>SQL</li>
-				</ul>
+	<footer id="contact" class="site-footer">
+		<div class="container">
+			<p class="eyebrow">Contact</p>
+			<h2>Work with me</h2>
+			<p class="lead">Consulting and contract (C2C) engagements run through RDF Industries: taking an idea or MVP to production, or designing and building the architecture from the ground up.</p>
+			<div class="btn-row">
+				<a class="btn" href="https://rdfindustries.com/contact" target="_blank" rel="noopener">Start a conversation</a>
 			</div>
-			<div class="skill-category">
-				<h3>AI/ML Frameworks & Libraries</h3>
-				<ul>
-					<li>LangChain</li>
-					<li>LangGraph</li>
-					<li>CrewAI</li>
-					<li>Model Context Protocol (MCP)</li>
-					<li>PyTorch</li>
-					<li>Scikit-Learn</li>
-					<li>Ollama</li>
-					<li>vLLM</li>
-					<li>Hugging Face</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Web, API & Backend</h3>
-				<ul>
-					<li>FastAPI</li>
-					<li>Flask</li>
-					<li>React</li>
-					<li>Node.js</li>
-					<li>REST APIs</li>
-					<li>OpenAPI</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Databases</h3>
-				<ul>
-					<li>PostgreSQL</li>
-					<li>MongoDB</li>
-					<li>Microsoft SQL Server</li>
-					<li>MySQL</li>
-					<li>Oracle</li>
-					<li>SQLite</li>
-					<li>DynamoDB (familiar)</li>
-					<li>Neo4j (graph)</li>
-					<li>ChromaDB, FAISS, PGVector (vector)</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Cloud & DevOps</h3>
-				<ul>
-					<li>AWS</li>
-					<li>Azure</li>
-					<li>Google Cloud</li>
-					<li>Docker</li>
-					<li>MLOps / LLMOps</li>
-					<li>GitHub Actions</li>
-					<li>Azure DevOps</li>
-					<li>CI/CD Pipelines</li>
-					<li>Version Control (Git)</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>NVIDIA AI Stack</h3>
-				<ul>
-					<li>CUDA</li>
-					<li>NIM / NeMo</li>
-					<li>Jetson (edge)</li>
-					<li>DGX Spark</li>
-					<li>Blackwell-class GPUs</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>Data & Visualization Tools</h3>
-				<ul>
-					<li>Pandas</li>
-					<li>NumPy</li>
-					<li>Matplotlib</li>
-					<li>Seaborn</li>
-					<li>Tableau</li>
-					<li>Jupyter Notebooks</li>
-				</ul>
-			</div>
-			<div class="skill-category">
-				<h3>AI Services & Models</h3>
-				<ul>
-					<li>OpenAI / ChatGPT</li>
-					<li>Claude</li>
-					<li>Gemini</li>
-					<li>Grok</li>
-					<li>Llama & open-source LLMs</li>
-					<li>Ollama & vLLM</li>
-					<li>Image Generation</li>
-					<li>Speech Recognition & Text-to-Speech</li>
-					<li>Amazon Bedrock</li>
-					<li>Google AI Studio / Vertex</li>
-				</ul>
-			</div>
+			<ul class="footer-links">
+				<li><a href="https://rdfindustries.com/contact" target="_blank" rel="noopener">RDF Industries contact</a></li>
+				<li><a href="https://www.linkedin.com/in/josh-rogers-rdfi/" target="_blank" rel="noopener">LinkedIn</a></li>
+				<li><a href="https://github.com/JoshRDFI" target="_blank" rel="noopener">GitHub</a></li>
+				<li><a href="https://x.com/JoshRDFI" target="_blank" rel="noopener">X</a></li>
+			</ul>
+			<p class="fine-print">Joshua Rogers · Founder, RDF Industries, Inc.</p>
 		</div>
-
-		<h2 id="featured">Featured Work</h2>
-		<div class="featured-card">
-			<h3>QOR &mdash; Private AI Workforce<span class="featured-tag">RDF Industries</span></h3>
-			<p>A governed, sovereign AI substrate that runs entirely within your infrastructure. Built for regulated industries &mdash; defense, chemical manufacturing, biopharma, healthcare, and finance &mdash; and any organization whose work cannot leave its control boundary. QOR delivers multi-agent AI capability without sending data outside your walls. <a href="https://rdfindustries.com/projects/enterprise-ai" target="_blank">Visit QOR &rarr;</a></p>
-			<p class="compliance">Designed for NIST 800-171, CMMC L2, ITAR, FIPS 140-3, HIPAA, and SOC 2.</p>
-		</div>
-
-		<h2 id="projects">Projects</h2>
-		<div class="project-card">
-			<h3>Zygos &mdash; Modular AI Runtime</h3>
-			<p>An open, modular, and inspectable AI runtime providing multi-provider reasoning, layered memory, tools, and skills through a composable architecture. v1 (TypeScript) is stable and usable today; v2 (Python, in development) adds a self-hosted web UI with voice. Built to be understood, extended, and trusted &mdash; from a local-first CLI agent to a production-grade orchestration layer. <a href="https://github.com/JoshRDFI/Zygos" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Local RLM REPL with Ollama & Qwen2.5-Coder</h3>
-			<p>This extension to the Recursive Language Models (RLM) library enables a completely local, privacy-focused environment for deeply interacting with large codebases. By leveraging Ollama running Qwen2.5-Coder, it offloads context-heavy analysis tasks from expensive cloud models to your local machine. 
-				<a href="https://github.com/JoshRDFI/rlm" target="_blank">View Project</a>	
-				</p>
-		</div>
-		<div class="project-card">
-			<h3>KeryxMaps - Multi-Platform Disaster Monitoring & Mapping System</h3>
-			<p>A privacy-focused, multi-hazard monitoring and navigation platform delivering real-time disaster, severe weather, and space-weather intelligence across Android, iOS, Web, and desktop. <a href="https://keryxmaps.com" target="_blank">Visit Site</a>
-			</p>
-		</div>	
-		<div class="project-card">
-			<h3>Buildathon Contest Projects</h3>
-			<p>These 6 projects showcase innovative solutions and applications built during (finalist project built after) the Buildathon hosted at the Snowflake offices in Menlo Park by DeepLearning.ai and AIFund.ai. <a href="https://github.com/JoshRDFI/buildathon" target="_blank">View Project</a></p> 
-		</div>
-		<div class="project-card">
-			<h3>n8n-mcp: AI Workflow Builder for Cursor</h3>
-			<p>A Model Context Protocol (MCP) for Cursor that enables building n8n workflows using AI. Forked from czlonkowski/n8n-mcp. <a href="https://github.com/JoshRDFI/n8n-mcp" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>ExamPro.co GenAI Bootcamp 2025 - JLPT Language Tutor</h3>
-			<p>Comprehensive AI-powered Japanese language learning system with LLMs, TTS, ASR, and image generation. Features interactive learning modules, visual novel gameplay, and JLPT N5 curriculum. <a href="https://github.com/JoshRDFI/free-genai-bootcamp-2025" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Retrieval Augmented Generation</h3>
-			<p>RAG implementation for improved AI responses with context. <a href="https://github.com/JoshRDFI/ragproject" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Multi-agent AI run locally</h3>
-			<p>Project creating multiple agents using CrewAI that performs assigned tasks. <a href="https://github.com/JoshRDFI/agentproject" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Running an AI on my local PC - Project LUCI</h3>
-			<p>LUCI is my voice operated and responding AI assistant. Details are in the README. <a href="https://github.com/JoshRDFI/PersonalAI" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Facial Recognition with Firefly Cast</h3>
-			<p>Modified a Google Colab notebook to run locally using Jupyter. Used OpenCV for image display. <a href="https://github.com/JoshRDFI/Init_face_recog" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Prompt Engineering Overview</h3>
-			<p>Examples of effective prompt engineering techniques for various AI models. <a href="https://github.com/JoshRDFI/free-genai-bootcamp-2025/blob/main/Sentence-constructor/README.md" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Python Development Portfolio</h3>
-			<p>Comprehensive collection of Python applications, data analysis scripts, and machine learning experiments. Includes Jupyter notebooks demonstrating data manipulation with Pandas/NumPy, statistical analysis, algorithm implementations, and various coursework projects showcasing proficiency in Python ecosystem tools and libraries. <a href="https://github.com/JoshRDFI/Python_Projects.git" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>C++ Programming Projects</h3>
-			<p>Object-oriented programming projects and algorithms implemented in C++. Features coursework from Western Governors University and Udemy courses, demonstrating proficiency in memory management, data structures, algorithm optimization, and system-level programming concepts. <a href="https://github.com/JoshRDFI/CPP_progs" target="_blank">View Project</a></p>
-		</div>
-
-
-		<h2 id="academic-projects">Academic Projects</h2>
-		<div class="project-card">
-			<h3>WGU Capstone: Machine Learning Recommender System</h3>
-			<p>Comprehensive machine learning recommender system built using Kaggle dataset with collaborative filtering and content-based recommendation algorithms. Implemented data preprocessing, feature engineering, model evaluation, and performance optimization techniques to deliver personalized recommendations with measurable accuracy improvements. <a href="https://github.com/JoshRDFI/capstone" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Unsupervised Learning: Customer Segmentation Analysis</h3>
-			<p>Applied advanced clustering algorithms and dimensionality reduction techniques to identify distinct customer segments for a German mail-order company. Utilized K-means clustering, PCA, and statistical analysis to uncover actionable business insights and customer behavior patterns for targeted marketing strategies. <a href="https://github.com/JoshRDFI/Udacity_Identify_Customer_Segments" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Supervised Machine Learning: Charity Donor Prediction</h3>
-			<p>Developed and optimized supervised learning models to predict potential charitable donors using demographic and behavioral data. Implemented feature selection, cross-validation, and hyperparameter tuning with algorithms including Random Forest and AdaBoost to maximize donation prediction accuracy. <a href="https://github.com/JoshRDFI/Udacity_Machine_Learning_Project1" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Statistical Analysis with R: Bicycle Sharing Data</h3>
-			<p>Comprehensive data exploration and visualization project using R and ggplot2 to analyze bicycle sharing patterns. Performed statistical hypothesis testing, correlation analysis, and created publication-quality visualizations to identify usage trends and seasonal patterns in urban mobility data. <a href="https://github.com/JoshRDFI/Udacity_R_Programming" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Business Intelligence: Airport Delays Dashboard</h3>
-			<p>Interactive Tableau dashboard analyzing flight delay patterns across multiple airports and airlines. Features dynamic filtering, trend analysis, and geographic visualizations to identify operational bottlenecks and seasonal patterns, enabling data-driven decision making for aviation stakeholders. <a href="https://public.tableau.com/app/profile/joshua.rogers3131/viz/AirlineProject_16765032108890/DelayStoryboard" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Database Engineering: Music Streaming ETL Pipeline</h3>
-			<p>Designed and implemented a complete ETL pipeline for a music streaming platform using PostgreSQL and Python. Built normalized database schema, automated data ingestion processes, and optimized query performance for analytics workloads supporting millions of song plays and user interactions. <a href="https://github.com/JoshRDFI/Udacity_Data_Modeling_With_Postgres#sparkify-database-etl-using-postgresql-and-python-3" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Data Science: Movie Database Investigation</h3>
-			<p>Comprehensive statistical analysis investigating the relationship between objective movie characteristics (budget, runtime, genre) and commercial success metrics. Applied exploratory data analysis, correlation studies, and hypothesis testing using Python and pandas to identify key factors driving movie popularity and box office performance. <a href="https://github.com/JoshRDFI/Udacity_Investigate_Dataset" target="_blank">View Project</a></p>
-		</div>
-		<div class="project-card">
-			<h3>Statistical Analysis: A/B Testing for Web Optimization</h3>
-			<p>Rigorous A/B testing analysis to evaluate website conversion rate improvements. Applied statistical hypothesis testing, power analysis, and confidence interval calculations to determine the significance of user interface changes. Utilized Python for data analysis and provided actionable recommendations based on user behavior metrics. <a href="https://github.com/JoshRDFI/Udacity_AB_Testing" target="_blank">View Project</a></p>
-		</div>
-		<h2 id="certifications">Certifications</h2>
-		<div class="cert-container">
-			<div class="cert-card">
-				<a href="http://verify.CompTIA.org" target="_blank">
-					<img src="img/Aplus.png" alt="CompTIA A Plus logo" />
-				</a>
-				<h3>CompTIA A+</h3>
-				<p>Verification Code: MFZXWG33XHF1QSK8</p>
-			</div>
-			<div class="cert-card">
-				<a href="http://verify.CompTIA.org" target="_blank">
-					<img src="img/NetworkPlus.png" alt="CompTIA Network Plus logo" />
-				</a>
-				<h3>CompTIA Network+</h3>
-				<p>Verification Code: JF8V2YEGX3V1QT3C</p>
-			</div>
-			<div class="cert-card">
-				<a href="http://verify.CompTIA.org" target="_blank">
-					<img src="img/SecurityPlus.png" alt="CompTIA Security Plus logo" />
-				</a>
-				<h3>CompTIA Security+</h3>
-				<p>Verification Code: 800WJN43XL1Q15G0</p>
-			</div>
-			<div class="cert-card">
-				<img src="img/CIOS_logo.jpg" alt="CompTIA IT Operations Specialist logo" />
-				<h3>CompTIA IT Operations Specialist</h3>
-				<p>Stackable Certifcation: A+ and Network+</p>
-			</div>
-			<div class="cert-card">
-				<img src="img/CSIS_logo.jpg" alt="CompTIA Secure Infrastructure Specialist logo" />
-				<h3>CompTIA Secure Infrastructure Specialist</h3>
-				<p>Stackable Certification: A+ and Security+</p>
-			</div>
-			<div class="cert-card">
-				<a href="https://cp.certmetrics.com/ciwcerts/en/public/verify/credential" target="_blank">
-					<img src="img/DataAnalyst_sp.jpg" alt="CIW Data Analyst logo" />
-				</a>
-				<h3>CIW Data Analyst</h3>
-				<p>Verification Code: 2a2648c676e7472090248b5801a49dbf</p>
-			</div>
-			<div class="cert-card">
-				<a href="http://verify.CompTIA.org" target="_blank">
-					<img src="img/ProjectPlus.png" alt="CompTIA Project Plus logo" />
-				</a>
-				<h3>CompTIA Project+</h3>
-				<p>Verification Code: 9LCZMMKNXCR1Q69E</p>
-			</div>
-			<div class="cert-card">
-				<a href="https://www.peoplecert.org/for-corporations/certificate-verification-service" target="_blank">
-					<img src="img/ITIL.png" alt="ITIL logo" />
-				</a>
-				<h3>Axelos ITIL 4 Foundation</h3>
-				<p>Verification Code: GR671559900JR</p>
-			</div>
-		</div>
-	</div>
-	<footer>
-		<p>Connect with me on <a href="https://www.linkedin.com/in/josh-rogers-rdfi/" target="_blank">LinkedIn</a> | <a href="https://x.com/JoshRDFI" target="_blank">Twitter/X</a></p>
 	</footer>
 </body>
 </html>
