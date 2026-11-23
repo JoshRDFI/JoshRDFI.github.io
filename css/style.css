@@ -38,7 +38,7 @@
     --muted: #8A97A8;
     --accent: #5B9BFF;
     --rule: #3B82F6;
-    --btn-bg: #3B82F6;
+    --btn-bg: #2563EB;
     --btn-text: #FFFFFF;
     --btn2-border: #2C3B50;
     --tag-bg: #17263A;
@@ -56,7 +56,7 @@
   --muted: #8A97A8;
   --accent: #5B9BFF;
   --rule: #3B82F6;
-  --btn-bg: #3B82F6;
+  --btn-bg: #2563EB;
   --btn-text: #FFFFFF;
   --btn2-border: #2C3B50;
   --tag-bg: #17263A;
@@ -303,8 +303,9 @@ a:hover {
   color: var(--btn-text);
 }
 
+/* Darken on hover so button text contrast only increases in both themes. */
 .btn:hover {
-  filter: brightness(1.12);
+  filter: brightness(0.88);
 }
 
 .btn-secondary {
@@ -387,8 +388,12 @@ a:hover {
   font-weight: 500;
   font-size: 0.72rem;
   letter-spacing: 0.04em;
-  text-transform: lowercase;
   cursor: pointer;
+}
+
+#theme-toggle[aria-pressed="true"] {
+  color: var(--ink);
+  border-color: var(--accent);
 }
 
 #theme-toggle:hover {

@@ -1,13 +1,13 @@
 // Light/dark theme toggle.
 // The inline script in <head> applies any saved choice before first paint;
 // this file wires up the header button. With no saved choice the page follows
-// the OS preference, and the button switches to the opposite of what is shown.
+// the OS preference. The button's label is constant ("Dark theme") and its
+// pressed state reports whether the dark theme is currently shown.
 (function () {
   var root = document.documentElement;
   var button = document.getElementById('theme-toggle');
   if (!button) return;
 
-  var label = button.querySelector('.theme-toggle-label');
   var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
 
   function effectiveTheme() {
@@ -17,9 +17,7 @@
   }
 
   function render() {
-    var current = effectiveTheme();
-    button.setAttribute('aria-pressed', current === 'dark' ? 'true' : 'false');
-    if (label) label.textContent = current === 'dark' ? 'light' : 'dark';
+    button.setAttribute('aria-pressed', effectiveTheme() === 'dark' ? 'true' : 'false');
   }
 
   button.addEventListener('click', function () {
