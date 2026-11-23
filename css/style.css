@@ -578,3 +578,64 @@ html:not(.js) #theme-toggle {
 #main:focus {
   outline: none;
 }
+
+/* ==========================================================================
+   Selected work and capabilities
+   ========================================================================== */
+.projects {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  margin-bottom: 2rem;
+}
+
+.card-link {
+  font-weight: 600;
+}
+
+.more-projects {
+  max-width: 46rem;
+}
+
+.more-projects summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.more-projects ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.more-projects li {
+  padding: 0.55rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.more-desc {
+  color: var(--muted);
+}
+
+.capability-grid {
+  display: grid;
+  gap: 1.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+}
+
+.capability {
+  padding-top: 1rem;
+  border-top: 3px solid var(--rule);
+}
+
+.capability h3 {
+  font-size: 1.1rem;
+}
+
+.capability p {
+  margin: 0;
+  color: var(--muted);
+}
