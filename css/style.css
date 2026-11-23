@@ -157,6 +157,11 @@ a:hover {
   top: 0.75rem;
 }
 
+/* The skip link moves focus to <main>; it is a landmark, not a control, so no ring. */
+#main:focus {
+  outline: none;
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -169,10 +174,6 @@ a:hover {
 
 .section {
   padding: 4rem 0;
-}
-
-.section:empty {
-  display: none;
 }
 
 .section + .section {
@@ -190,10 +191,6 @@ a:hover {
 
 .section-head p {
   color: var(--muted);
-}
-
-.section-head .eyebrow {
-  color: var(--accent);
 }
 
 .grid {
@@ -367,6 +364,8 @@ a:hover {
 }
 
 .site-nav a {
+  display: inline-block;
+  padding: 0.25rem 0;
   color: var(--muted);
   font-size: 0.9rem;
   font-weight: 600;
@@ -541,45 +540,6 @@ html:not(.js) #theme-toggle {
 }
 
 /* ==========================================================================
-   Small screens
-   ========================================================================== */
-@media (max-width: 640px) {
-  :root {
-    --gutter: 1rem;
-  }
-
-  .section {
-    padding: 3rem 0;
-  }
-
-  .hero {
-    padding: 3rem 0 2.5rem;
-  }
-
-  .site-header .container {
-    justify-content: center;
-  }
-
-  .site-nav {
-    justify-content: center;
-  }
-
-  .site-nav ul {
-    justify-content: center;
-    gap: 0.25rem 1rem;
-  }
-
-  .brand img {
-    height: 34px;
-  }
-}
-
-/* The skip link moves focus to <main>; it is a landmark, not a control, so no ring. */
-#main:focus {
-  outline: none;
-}
-
-/* ==========================================================================
    Selected work and capabilities
    ========================================================================== */
 .projects {
@@ -719,6 +679,7 @@ html:not(.js) #theme-toggle {
   height: 56px;
   width: auto;
   max-width: 100%;
+  object-fit: contain;
   padding: 3px;
   background: #fff;
   border-radius: 4px;
@@ -737,7 +698,50 @@ html:not(.js) #theme-toggle {
   overflow-wrap: anywhere;
 }
 
+.badge-label {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-prereq {
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Small screens
+   ========================================================================== */
 @media (max-width: 640px) {
+  :root {
+    --gutter: 1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .site-header .container {
+    justify-content: center;
+  }
+
+  .site-nav {
+    justify-content: center;
+  }
+
+  .site-nav ul {
+    justify-content: center;
+    gap: 0.25rem 1rem;
+  }
+
+  .brand img {
+    height: 34px;
+  }
+
   .career li {
     grid-template-columns: 1fr;
   }
