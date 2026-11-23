@@ -8,3 +8,6 @@ Thumbs.db
 
 # Personal documents (e.g. resume) kept in-repo temporarily — never publish
 *.docx
+
+# Old material kept locally, not published
+promptengexamples.html
